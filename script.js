@@ -45,12 +45,12 @@ ScrollReveal().reveal(".container__left h1", {
 });
 ScrollReveal().reveal(".container__left .container__btn", {
   ...scrollRevealOption,
-  delay: 500,
+  delay: 600,
 });
 
 ScrollReveal().reveal(".container__right h4", {
   ...scrollRevealOption,
-  delay: 2000,
+  delay: 3000,
 });
 ScrollReveal().reveal(".container__right h2", {
   ...scrollRevealOption,

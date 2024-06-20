@@ -142,6 +142,11 @@ nav {
   border-radius: 5rem;
 }
 
+.container__left .btn .a{
+  text-decoration: none;
+  color: var(--white);
+}
+
 .container__left .btn:hover {
   color: var(--text-dark);
   background-color: var(--primary-color);
