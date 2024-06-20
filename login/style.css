@@ -31,8 +31,8 @@ main {
 .box {
     position: relative;
     width: 100%;
-    max-width: 1020px;
-    height: 640px;
+    max-width: 1080px;
+    height: 800px;
     background-color: var(--white);
     border-radius: 3.3rem;
     box-shadow: 0 60px 40px -30px rgb(0, 0, 0, 0.27)
