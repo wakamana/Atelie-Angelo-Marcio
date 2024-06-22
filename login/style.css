@@ -32,7 +32,7 @@ main {
     position: relative;
     width: 100%;
     max-width: 1080px;
-    height: 800px;
+    height: 700px;
     background-color: var(--white);
     border-radius: 3.3rem;
     box-shadow: 0 60px 40px -30px rgb(0, 0, 0, 0.27)
@@ -40,8 +40,8 @@ main {
 
 .inner-box {
     position: absolute;
-    width: 90%;
-    height: 90%;
+    width: 80%;
+    height: 80%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -50,37 +50,32 @@ main {
 .form-wrap {
     position: absolute;
     height: 100%;
+    justify-content: right;
     width: 45%;
     top: 0;
     left: 0;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    transition: .8s ease-in-out;
 }
 
-.carousel {
+.image {
     position: absolute;
     height: 100%;
-    width: 56%;
+    width: 58%;
     left: 45%;
     top: 0;
     background-color: var(--text-dark);
-    border-radius: 2rem;
+    border-radius: 3.3rem;
     transition: .8s ease-in-out;
 }
 
+
 form {
-    max-width: 260px;
+    max-width: 280px;
     width: 100%;
     margin: 0 auto;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    grid-column: 1/2;
-    grid-row: 1/2;
-    transition: opacity 0.02s 0.4s;
 }
 
 form.sign-up-form{
@@ -101,13 +96,13 @@ form.sign-up-form{
 
 .heading h2 {
     font-size: 2.1rem;
-    font-weight: 600;
+    font-weight: 800;
     color: var(--text-dark);
 }
 
 .heading h6 {
     color: #bababa;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 0.75rem;
     display: inline;
 }
@@ -182,34 +177,24 @@ label {
     background-color:#f1c0a6;
 }
 
-.text {
-    color: #bbb;
-    font-size: 0.7rem;
-}
-  
-.text a {
-    color: #bbb;
-      transition: 0.3s;
-}
-  
-.text a:hover {
-    color: #8371fd;
-}
+@media screen and (max-width: 540px) {
+    .box {
+        width: 100%;
+        height: 700px;
+    }
+    
+    .inner-box {
+        display: flex;
+        align-items: baseline;
+    }
+    
+    .form-wrap {
+        width: 100%;
+    }
 
-main.sign-up-mode form.sign-in-form {
-    opacity: 0;
-    pointer-events: none;
-  }
-  
-  main.sign-up-mode form.sign-up-form {
-    opacity: 1;
-    pointer-events: all;
-  }
-  
-  main.sign-up-mode .form-wrap {
-    left: 55%;
-  }
-  
-  main.sign-up-mode .carousel {
-    left: 0%;
-  }
+    .heading {
+        width: 100%;;
+    }
+    
+    
+}
