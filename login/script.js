@@ -17,15 +17,14 @@ inputs.forEach(inp => {
 
 
 function entrar(){
+    
+   let listaUser = []
 
-   const listaUser = []
-
-   const userValid = {
+   let userValid = {
     nome: "",
     senhaC: ""
    }
-   listaUser = JSON.parse(localStorage.getItem("listaUser"))
-
+   listaUser = JSON.parse(localStorage.getItem("usuario"))
    listaUser.forEach((item) => {
     if (login.value == item.nomeCad && senha.value == item.senhaCad){
         userValid = {
@@ -34,9 +33,10 @@ function entrar(){
         }
     }
    })
-
    if(login.value == userValid.nome && senha.value == userValid.senhaC){
-    window.location.href ="http://127.0.0.1:5500/index.htmlhttp://127.0.0.1:5500/index.html"
+    alert("deu certo");
+   }else{
+    alert("errado");
    }
 }
  

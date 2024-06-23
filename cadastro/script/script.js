@@ -310,15 +310,15 @@ function checkForm(){
     });
 
     if(isValid){
-        let listaUser = JSON.parse(localStorage.getItem("listaUser") || "[]")
+        let usuario = JSON.parse(localStorage.getItem("usuario") || "[]")
 
-        listaUser.push({
+        usuario.push({
          nomeCad: email.value,
-         senhaCad: password.value,
+         senhaCad: password.value
         })
-        localStorage.setItem("listaUser", JSON.stringify(listaUser))
+        localStorage.setItem("usuario", JSON.stringify(usuario));
 
-        window.location.href = "http://127.0.0.1:5500/login/index.html"
+        window.location.href = "http://127.0.0.1:5500/login/index.html";
     }   
 }
 
