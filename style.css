@@ -25,7 +25,9 @@
   border: none;
   transition: 0.3s;
   cursor: pointer;
+  visibility: visible;
 }
+
 
 img {
   display: flex;

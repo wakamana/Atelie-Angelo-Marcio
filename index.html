@@ -26,8 +26,13 @@
       <ul class="nav__links" id="nav-links">
         <li><a href="#">Inicio</a></li>
         <li><a href="#carrossel">Projetos</a></li>
-        <li><a href="/login/index.html">Contato</a></li>
       </ul>
+      <div class="nav__btns">
+        <a id="entrar" class="btn" href="http://127.0.0.1:5500/login/index.html">Entrar</a>
+      </div>
+      <div class="nav__btns">
+        <button id="sair" class="btn" onclick="sair()">Sair</button>
+      </div>
       <div class="nav__btns">
         <button class="btn"><i class="ri-search-line"></i></button>
     
@@ -35,9 +40,9 @@
     </nav>
     <div class="container">
       <div class="container__left">
-        <h1>Sinta-se confortável.</h1>
+        <h1 id="logado">Sinta-se confortável</h1>
         <div class="container__btn">
-          <button class="btn"><a href="/login/index.html" class="a">Faça seu orçamento.</a></button>
+          <button class="btn"><a href="#" class="a">Faça seu orçamento.</a></button>
         </div>
       </div>
       <div class="container__right">

@@ -1,6 +1,11 @@
 const menuBtn = document.getElementById("menu-btn");
 const navLinks = document.getElementById("nav-links");
 const menuBtnIcon = menuBtn.querySelector("i");
+let userLogado = JSON.parse(localStorage.getItem("userLogado"));
+let logado = document.getElementById("logado");
+
+
+logado.innerHTML = `Bem-vindo, ${userLogado.userCad}`;
 
 menuBtn.addEventListener("click", (e) => {
   navLinks.classList.toggle("open");
@@ -79,4 +84,11 @@ ScrollReveal().reveal(".location", {
   origin: "left",
   delay: 5000,
 });
+
+function sair(){
+  localStorage.removeItem("token");
+  localStorage.removeItem("userLogado");
+
+  window.location.href ="http://127.0.0.1:5500/index.html";
+}
 

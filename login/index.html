@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/login/style.css">
     <title>Login</title>
 </head>
 <body>
@@ -19,35 +19,28 @@
                         <div class="heading">
                           <h2>Bem-vindo(a) de volta!</h2>
                           <h6>Ainda não é nosso cliente?</h6>
-                          <a href="/cadastro/index.html" class="toggle">Cadastre-se.</a>
+                          <a href="http://127.0.0.1:5500/cadastro/index.html" class="toggle">Cadastre-se.</a>
                         </div>
-          
+                        <div id="msgError"></div>
                         <div class="actual-form">
                           <div class="input-wrap">
-                            <input type="text" class="input-field" id="email" autocomplete="on"/>
-                            <label for="email">E-mail</label>
-                            <p id="errorSenha"></p>
+                            <input type="email" class="input-field" id="email"/>
+                            <label>E-mail</label> 
                           </div>
                           
                           <div class="input-wrap">
-                            <input type="password" minlength="8" autocomplete="on" class="input-field" id="password"/>
-                            <label for="password">Senha</label>
-                            <p id="errorSenha"></p>
+                            <input type="password" minlength="8" class="input-field" id="password"/>
+                            <label>Senha</label>
                           </div>
           
                           <input type="submit" value="Entrar" class="sign-btn" onclick="entrar()"/>
           
                         </div>
-                        <div>
-                        
-                        </div>
                     </form>
                 </div>       
                 <div class="images">
-                  <div class="images2">
-                    <img src="/img/44656.jpg" class="image" alt="">
-                  </div>
-                </div>
+                    <img src="/img/44656.jpg" class="img" alt="">               
+                </di>
             </div>
         </div>
       </main>
@@ -55,6 +48,6 @@
 
 
 
-    <script src="script.js"></script>
+    <script src="/login/script.js"></script>
 </body>
 </html>

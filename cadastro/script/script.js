@@ -314,7 +314,8 @@ function checkForm(){
 
         usuario.push({
          nomeCad: email.value,
-         senhaCad: password.value
+         senhaCad: password.value,
+         userCad: username.value
         })
         localStorage.setItem("usuario", JSON.stringify(usuario));
 
